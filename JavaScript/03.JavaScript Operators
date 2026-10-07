@@ -1,0 +1,138 @@
+//A] Arithmetic Operators
+//1. Addition +:
+
+//1.A school collected ₹15,000 from one class and ₹12,500 from another class. Find the total collection.
+let amountClass1=15000;
+let amountClass2=12500;
+let totalCollection=amountClass1+amountClass2;
+console.log("Total Collection =",totalCollection)
+
+//2.A person reads 18 pages in the morning and 25 pages in the evening. Find the total pages read.
+let readMorning=18;
+let readEvening=25;
+let totalPagesRead=readMorning+readEvening;
+console.log("Total Pages Read =",totalPagesRead);
+
+//3.A shop sold 125 items on Monday and 178 items on Tuesday. Find the total items sold.
+let monday=125;
+let tuesday=178;
+let totalItemsSold=monday+tuesday;
+console.log("Total Items Sold =",totalItemsSold);
+
+//4.Predict the output:
+let a = "10";
+let b = 5;
+let result1 = a + b;
+console.log(result1);
+
+//5.Predict the output:
+let x = 5;
+let y = "3";
+let result2 = x + y;
+console.log(result2);
+
+//6.What is the output of 15 + 27?
+let num1=15;
+let num2=27;
+let result=num1+num2;
+console.log("Result =",result)
+
+//7.Calculate the total price if a book costs ₹350 and a pen costs ₹45.
+let costOfBooks=350;
+let costOfPens=45;
+let totalCosts=costOfBooks+costOfPens;
+console.log("Total Cost =",totalCosts);
+
+//8.What is the result of "25" + 10 and why?
+let val1="25";
+let val2=10;
+let result3=val1+val2;
+console.log(result3);
+
+//9.A person has ₹2000 in their wallet. They buy items worth ₹750 and ₹320. Write an expression using + to find the total spent, then calculate the remaining balance
+let item1=750;
+let item2=320;
+let totalMoney=2000;
+let totalSpent=item1+item2;
+let remainingBalance=totalMoney-totalSpent;
+console.log("Total Spent =",totalSpent);
+console.log("Remaining Balance =",remainingBalance);
+
+//10.Predict the outputs and explain:
+console.log(5 + "5" + 5);
+console.log(5 + 5 + "5");
+console.log("5" + 5 + 5);
+
+
+
+//2.Subtraction- :
+//1.A bus has 80 seats, and 53 seats are occupied. Find the number of empty seats.
+let seats=80;
+let occupied=53;
+let emptySeats=seats-occupied;
+console.log("Empty Seats =",emptySeats);
+
+//2.A student has 500 marks and loses 35 marks due to incorrect answers. Find the final marks.
+let totalMarks=500;
+let marksLost=35;
+let finalMarks=totalMarks-marksLost;
+console.log("Final Marks =",finalMarks);
+
+//3.A warehouse has 2,500 boxes and sends 875 boxes to a store. Find the remaining boxes.
+let totalBoxes=2500;
+let boxesSpent=875;
+let remainingboxes=totalBoxes-boxesSpent;
+console.log("Remaining Boxes =",remainingboxes);
+
+//4.Predict the output:
+let a = "10";
+let b = 3;
+let result = a - b;
+console.log(result);
+
+//5.Predict the output:
+let x = "20";
+let y = "5";
+let result1 = x - y;
+console.log(result1);
+
+//6.hat is the output of 100 - 37?
+let num1=100;
+let num2=37;
+let result2=num1-num2;
+console.log(result2)
+
+//7.A tank has 500 litres of water. After using 175 litres, how much water is left?
+let totalWater=500;
+let waterSpent=175;
+let waterLeft=totalWater+waterSpent;
+console.log("Water Left =",waterLeft);
+
+//8.What is the result of "50" - 20 and "50" - "20"? Explain any difference.
+console.log("50"-20);
+console.log("50"-"20");
+
+//9.A shopkeeper had 240 apples. He sold 95 in the morning and 67 in the evening. Write expressions to find how many apples are left?
+let apples=240;
+let morning=95;
+let evening=67;
+let applesLeft=apples-(morning+evening);
+console.log("Apples Left =",applesLeft);
+
+//10.Predict and explain the outputs:
+console.log("100" - 50);
+console.log("abc" - 10);
+console.log(10 - "5" - "2");
+console.log("10" - "5" - "2");
+
+
+//3.Multiplication * :
+//1.One notebook costs ₹45. Calculate the cost of buying 8 notebooks.
+let costOfNotebook=45;
+let costOfNotebooks=8;
+let totalCosts=costOfNotebook*costOfNotebooks;
+console.log("Total Costs =",totalCosts);
+
+//2.A machine produces 120 bottles per hour. Calculate its production in 6 hours.
+
+
