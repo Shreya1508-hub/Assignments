@@ -439,4 +439,39 @@ let b6 = 0;
 let result29 = a6 ** b6;
 console.log(result29);
 
+===============================================================================================================================================================================
+===============================================================================================================================================================================
+
+/B] Assignment Operator
+//=============================
+//Simple Assignment =
+//=============================
+//1.Store a student’s name as "Priya" and marks as 92 using the assignment operator.
+let name="Priya";
+let marks=92;
+console.log("Name:",name);
+console.log("Marks:",marks);
+
+//2.Create a variable score and assign it the value 0.
+let score=0;
+console.log("Score:",score);
+
+//3.Assign the value 50 to three variables a, b and c using a single chained assignment.
+let a=b=c=50
+console.log(a,b,c);
+
+//4.Predict the output:
+let x;
+x = 100;
+console.log(x);
+
+//5.Predict the output:
+let p = 15;
+let q = p;
+q = 30;
+console.log(p, q);
+
+
+
+
 
