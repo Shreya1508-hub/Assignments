@@ -637,6 +637,85 @@ console.log(n);
 let p=2;
 p**=-1;
 console.log(p);
+//==============================================================================================================================================================================
+/C] Comparison Operators
+//==============================================================================================================================================================================
+//1. Loose Equality ==
+//==================================================
+//1.Check whether the string "25" is loosely equal to the number 25.
+let value1 = "25";
+let value2 = 25;
+value1 == value2;
+//2.Check if 0 == false returns true or false.
+let number = 0;
+let booleanValue = false;
+number == booleanValue;
+//3.Predict the Output.
+let num1 = 10;
+let num2 = "10";
+num1 == num2;
+
+null == undefined;
+
+"" == 0;
+
+[] == false;
+
+NaN == NaN;
+//===================================================================
+//2. Loose Inequality !=
+//===================================================================
+//1.Check whether "18" != 18 returns true or false.
+let value1 = "18";
+let value2 = 18;
+value1 != value2;
+//2.A password is stored as "1234". User enters 1234 (number). Will != return true?
+let password = "1234";
+let userInput = 1234;
+password != userInput;
+//3.Predict the Output
+5 != "5";
+0 != false;
+//4.Predict the Output
+null != undefined;
+"" != 0;
+//5.What does NaN != NaN return? Explain.
+NaN != NaN;
+//======================================================================
+//3. Strict Equality ===
+//========================================================================
+//1.Check whether "25" === 25 returns true or false. Explain why.
+let value1 = "25";
+let value2 = 25;
+value1 === value2;
+//2.Check if 0 === false and null === undefined.
+0 === false;
+null === undefined;
+//3.Predict the Output.
+10 === "10";
+true === 1;
+//4.Predict the Output.
+"" === 0;
+[] === false;
+//==================================================================
+//4. Strict Inequality !==
+//================================================================
+//1.Check whether "18" !== 18 returns true or false.
+let value1 = "18";
+let value2 = 18;
+value1 !== value2;
+//2.Check if 0 !== false and null !== undefined.
+0 !== false;
+null !== undefined;
+//3.Predict the Output.
+5 !== "5";
+true !== 1;
+//4.Predict the output
+"" !== 0;
+NaN !== NaN;
+//5.Write a condition that checks if a variable input is strictly not equal to the string "0".
+let input = "5";
+input !== "0";
 
 
 
