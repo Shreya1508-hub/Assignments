@@ -525,6 +525,120 @@ console.log(num);
 let x="abc";
 x-=5;
 console.log(x)
+//======================================================
+//4. Multiply and Assign *=
+//======================================================
+//1.Price of an item is ₹500. Apply 18% GST using *= 1.18.
+let price=500;
+price+=1.18
+console.log("Price:",price)
+
+//2.A quantity of 8 is tripled. Update using *=.
+let quantity=8;
+quantity*=3;
+quantity*=3;
+quantity*=3;
+console.log("Quantity:",quantity);
+
+//3.Predict the output:
+let amount = 200;
+amount *= 1.1;
+console.log(amount);
+
+//4.Predict the output:
+let val = "7";
+val *= 3;
+console.log(val);
+
+//5.What is the result of let y = "hello"; y *= 2;? Explain.
+let y="hello";
+y*=2;
+console.log(y)
+//====================================================
+//5. Divide and Assign /=
+//====================================================
+//1.Total of 180 chocolates is shared among 6 children. Update using /=.
+let chocolates=180;
+let children=6;
+chocolates/=children;
+console.log(chocolates);
+
+//2.Distance of 300 km is covered in 5 hours. Find average speed using /=.
+let distance=300;
+let hours=5;
+distance/=hours;
+console.log("Average Speed:",distance);
+
+//3.Predict the output:
+let total = 400;
+total /= 8;
+console.log(total);
+
+//4.Predict the output:
+let num = "100";
+num /= 4;
+console.log(num);
+
+//5.What is the result of let z = 50; z /= 0;? Explain.
+let z=50;
+z/=0;
+console.log(z)
+//=============================================================
+//6.Modulus and Assign %=
+//=============================================================
+//1.Number 47 is divided by 6. Store only the remainder using %=.
+let number=47;
+number%=6;
+console.log(number);
+
+//2.Counter is at 23. Keep only the remainder when divided by 12 using %=.
+let counter=23;
+counter%=12;
+console.log(counter);
+
+//3.Predict the output:
+let num = 29;
+num %= 5;
+console.log(num);
+
+//4.Predict the output:
+let x = "17";
+x %= 3;
+console.log(x)
+
+//5.What is the result of let m = 15; m %= 0;? Explain.
+let m=15;
+m%=0;
+console.log(m)
+//===========================================================
+//7. Exponentiation and Assign **=
+//===========================================================
+//1.Side of a cube is 5. Update it to get the volume using **= 3.
+let side=5;
+side**=3;
+console.log(side);
+
+//2.Number 4 needs to be squared. Use **= 2.
+let num=4;
+num**=2;
+console.log(num);
+
+//3.Predict the output:
+let base = 2;
+base **= 5;
+console.log(base);
+
+//4.Predict the output:
+let n = 4;
+n **= 0.5;
+console.log(n);
+
+//5.What is the result of let p = 2; p **= -1;? Explain
+let p=2;
+p**=-1;
+console.log(p);
+
+
 
 
 
