@@ -288,6 +288,141 @@ if (num == 0) {
 }else {
     console.log("Negative Odd");
 }
+//===========================================================================================================================================================================
+//===========================================================================================================================================================================
+//D] Nested if Statement
+//=========================================================
+//1.Check if a number is greater than 10.
+//If yes, then check whether it is divisible by 3 and print the appropriate message.
+let num=15;
+if(num>10){
+    if(num%3==0){
+        console.log("The number is greater than 10 and also divisible by 3")
+    }
+}
+
+//2.Write a program that first checks if a person is 18 or older.
+//If yes, then check if they have a voter ID. Print “Can Vote” only if both conditions are true.
+let age=30;
+let haveVoterID=true;
+if(age>=18){
+    if(haveVoterID==true){
+        console.log("Can Vote")
+    }
+}
+
+//3.Check if a student has scored 40 or more marks.
+//If yes, then check if the score is 80 or above and print “Passed with Distinction”.
+let marks=86;
+if(marks>=40){
+    if(marks>=80){
+        console.log("Passed with Distinction")
+    }
+}
+
+//4.Create a simple ATM system:
+//First check if the PIN is correct.
+//If PIN is correct, then check if the account balance is sufficient for withdrawal.
+let pin = 1234;
+let balance = 5000;
+let amount = 1000;
+if (pin == 1234) {
+    if (amount <= balance) {
+        balance = balance - amount;
+        console.log("Withdrawal successful");
+        console.log("Remaining balance:", balance);
+    }
+}
+
+//5.Write a program that checks if a year is divisible by 4.
+//If yes, then further check if it is divisible by 100.
+//If it is divisible by 100, then check if it is also divisible by 400 to confirm it is a leap year.
+let year=3000
+if(year%4==0){
+    if(year%100==0){
+        if(year%400){
+            console.log("The year is leap year")
+        }
+    }
+}
+
+//6.Check if a user has entered a valid email (contains “@”).
+//If yes, then check if the email ends with “.com”.
+//If both are true, then check if the length of the email is greater than 10 characters and print “Valid Email”.
+let email = "shreya15@gmail.com";
+if (email.includes("@")) {
+    if (email.endsWith(".com")) {
+        if (email.length > 10) {
+            console.log("Valid Email");
+        }
+    }
+}
+
+//7.Write a program for online shopping:
+//First check if the cart total is ₹1000 or more.
+//If yes, then check if the user is a premium member.
+//If the user is premium, give 20% discount, otherwise give 10% discount.
+//Finally print the final amount after discount.
+let total = 1500;
+let premium = true;
+let discount;
+if(total>=1000){
+    if(premium==true){
+       discount=total*20/100 
+    }
+    else{
+        discount=total*10/100
+    }
+}
+console.log("discount",discount)
+
+//8.Check if a number is positive.
+//If yes, then check whether it is even.
+//If it is even, then further check if it is divisible by 4 and print “Positive Even and Divisible by 4”.
+let number=76;
+if(number>0){
+    if(number%2==0){
+        if(number%4==0){
+            console.log("Positive Even and Divisible by 4")
+        }
+    }
+}
+
+//9.Create a job eligibility checker with multiple conditions:
+//First check if age is between 21 and 30.
+//If age is valid, then check if the candidate has a graduation degree.
+//If the degree is present, then check if the candidate has at least 2 years of experience.
+//Print “Eligible for Interview” only if all three conditions are true.
+let age1=25;
+let hasGradutionDegree=true;
+let candidateExperience=3;
+if(21<=age1<=30){
+    if(hasGradutionDegree){
+        if(candidateExperience>=2){
+            console.log("Eligible for interview")
+        }
+    }
+}
+
+//10.Write a nested program for exam eligibility:
+//First check if the student is present.
+//If present, then check if internal marks are ≥ 30.
+//If internal marks are valid, then check if external marks are ≥ 35.
+//Print “Eligible for Final Exam” only when all conditions are satisfied.
+let isStudentPresent=true;
+let internalMarks=45;
+let externalMarks=50;
+if(isStudentPresent){
+    if(internalMarks>=30){
+        if(externalMarks>=35){
+            console.log("Eligible for final exam")
+        }
+    }
+}
+
+
+
+
 
 
 
