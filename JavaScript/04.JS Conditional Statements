@@ -419,7 +419,336 @@ if(isStudentPresent){
         }
     }
 }
+//===========================================================================================================================================================================
+//===========================================================================================================================================================================
+//E] switch Statement
+//===================================
+//1.Write a program that takes a month number (1–12) and prints the number of days in that month using switch
+//(Hint: Consider 28/29 for February as 28 for simplicity).
+let month = 2;
+switch (month) {
+    case 1:
+    case 3:
+    case 5:
+    case 7:
+    case 8:
+    case 10:
+    case 12:
+        console.log("31 Days");
+        break;
 
+    case 4:
+    case 6:
+    case 9:
+    case 11:
+        console.log("30 Days");
+        break;
+
+    case 2:
+        console.log("28 Days");
+        break;
+
+    default:
+        console.log("Invalid Month");
+}
+
+//2.Write a program that checks a character and prints whether it is a vowel or consonant using switch.
+let letter="a";
+switch(letter){
+    case "a":
+    case "e":
+    case "i":
+    case "o":
+    case "u":
+        console.log("Vowel")
+        break;
+    default:
+        console.log("consonant")
+}
+
+//3.Create a program that takes a number from 1 to 4 and prints the season using multiple cases together:
+//1 or 2 → Winter
+//3 or 4 → Summer
+let number=4
+switch(number){
+    case 1:
+    case 2:
+        console.log("Winter")
+        break;
+    case 3:
+    case 4:
+         console.log("Summer")
+         break;
+
+}
+
+//4.Write a program using switch (true) to assign class based on marks:
+//≥ 75 → Distinction
+//≥ 60 → 1st class
+//≥ 50 → 2nd class
+//≥ 35 → 3rd class
+//below 35 → Failed
+let marks2 = 78;
+let studentClass;
+switch (true) {
+    case marks2 >= 75:
+        studentClass = "Distinction";
+        break;
+
+    case marks2 >= 60:
+        studentClass = "1st Class";
+        break;
+
+    case marks2 >= 50:
+        studentClass = "2nd Class";
+        break;
+
+    case marks2 >= 35:
+        studentClass = "3rd Class";
+        break;
+
+    default:
+        studentClass = "Failed";
+}
+console.log(studentClass);
+
+//5.Create a nested switch program:
+//First take a role (“admin” or “user”).
+//If role is “admin”, then take an action (“create”, “edit”, “delete”) and print the corresponding message.
+//If role is “user”, print “Limited Access”.
+let role = "admin";
+let action = "edit";
+switch (role) {
+    case "admin":
+        switch (action) {
+            case "create":
+                console.log("Create Successful");
+                break;
+
+            case "edit":
+                console.log("Edit Successful");
+                break;
+
+            case "delete":
+                console.log("Delete Successful");
+                break;
+
+            default:
+                console.log("Invalid Action");
+        }
+        break;
+
+    case "user":
+        console.log("Limited Access");
+        break;
+
+    default:
+        console.log("Invalid Role");
+}
+
+//6.Predict and explain the output of the following code. Then correct it so that only one message is printed:
+let fruit = "mango";
+switch (fruit) {
+  case "apple":
+    console.log("Apple is red");
+  case "mango":
+    console.log("Mango is yellow");
+  case "banana":
+    console.log("Banana is yellow");
+  default:
+    console.log("Unknown fruit");
+}
+
+//7.Write a program that takes a value which can be either a number or a string (0, "0", false, null, undefined) and uses switch to correctly identify each one. Explain why some values may not match as expected.
+let value = "0";
+switch (value) {
+    case 0:
+        console.log("Number Zero");
+        break;
+
+    case "0":
+        console.log("String Zero");
+        break;
+
+    case false:
+        console.log("Boolean False");
+        break;
+
+    case null:
+        console.log("Null Value");
+        break;
+
+    case undefined:
+        console.log("Undefined Value");
+        break;
+
+    default:
+        console.log("Other Value");
+}
+
+//8.Create a tricky calculator using switch that supports these operations:
+//+, -, *, /, %, and also ** (exponentiation).
+//Handle division by zero properly inside the corresponding case.
+let number3 = 10;
+let number4 = 3;
+let operator = "**";
+switch (operator) {
+    case "+":
+        console.log(number3 + number4);
+        break;
+
+    case "-":
+        console.log(number3 - number4);
+        break;
+
+    case "*":
+        console.log(number3 * number4);
+        break;
+
+    case "/":
+        if (number4 !== 0) {
+            console.log(number3 / number4);
+        } else {
+            console.log("Cannot divide by zero");
+        }
+        break;
+
+    case "%":
+        console.log(number3 % number4);
+        break;
+
+    case "**":
+        console.log(number3 ** number4);
+        break;
+
+    default:
+        console.log("Invalid Operator");
+}
+
+//9.Write a program using switch that takes a date (day number of the month) and prints:
+//“Beginning of the month” (1–10)
+//“Middle of the month” (11–20)
+//“End of the month” (21–31)
+//Use switch (true) technique for range checking.
+let date = 15;
+let datePeriod;
+switch (true) {
+    case date >= 1 && date <= 10:
+        datePeriod = "Beginning of the month";
+        break;
+
+    case date >= 11 && date <= 20:
+        datePeriod = "Middle of the month";
+        break;
+
+    case date >= 21 && date <= 31:
+        datePeriod = "End of the month";
+        break;
+
+    default:
+        datePeriod = "Invalid Date";
+}
+console.log(datePeriod);
+
+//10.Create a multi-level nested switch program for an online food ordering system:
+//First select Category: "veg" or "nonveg".
+//Then select Item based on category.
+//Finally select Size: "half" or "full" and print the final order summary with price.
+let category = "veg";
+let item = "pizza";
+let size = "full";
+let price;
+switch (category) {
+    case "veg":
+        switch (item) {
+            case "pizza":
+                switch (size) {
+                    case "half":
+                        price = 150;
+                        break;
+
+                    case "full":
+                        price = 250;
+                        break;
+
+                    default:
+                        price = 0;
+                }
+                break;
+
+            case "burger":
+                switch (size) {
+                    case "half":
+                        price = 60;
+                        break;
+
+                    case "full":
+                        price = 100;
+                        break;
+
+                    default:
+                        price = 0;
+                }
+                break;
+
+            default:
+                price = 0;
+        }
+        break;
+
+    case "nonveg":
+        switch (item) {
+            case "pizza":
+                switch (size) {
+                    case "half":
+                        price = 200;
+                        break;
+
+                    case "full":
+                        price = 350;
+                        break;
+
+                    default:
+                        price = 0;
+                }
+                break;
+
+            case "burger":
+                switch (size) {
+                    case "half":
+                        price = 100;
+                        break;
+
+                    case "full":
+                        price = 160;
+                        break;
+
+                    default:
+                        price = 0;
+                }
+                break;
+
+            default:
+                price = 0;
+        }
+        break;
+
+    default:
+        price = 0;
+}
+
+if (price > 0) {
+    console.log("Category: " + category);
+    console.log("Item: " + item);
+    console.log("Size: " + size);
+    console.log("Final Price: ₹" + price);
+} else {
+    console.log("Invalid Order");
+}
+
+
+
+   
 
 
 
