@@ -72,3 +72,110 @@ for ( let i = 1 ; i <= 10; i++ ){
   Cost+= 150
   console.log(`${i} people👩‍🦱 = ₹${Cost} `)
 }
+//===========================================================================================================================================================================
+//===========================================================================================================================================================================
+//Part B] For Loop (Additional advanced questions)
+//=========================================================
+//1.Given an array of temperatures [28, 32, 25, 40, 18, 35], use a for loop to count how many days were hotter than 30°C.
+// let arr = [28, 32, 25, 40, 18, 35];
+// let count = 0;
+// for (let i = 0; i < arr.length; i++) {
+//     if (arr[i] > 30) {
+//         count++;
+//     }
+// }
+// console.log(count); 
+
+//2.Write a for loop that calculates the sum of all digits of a given number (example: 4729 → 4+7+2+9 = 22).
+// let num = 4729;
+// let sum = 0;
+// for (; num > 0; num = Math.floor(num / 10)) {
+//     let digit = num % 10;
+//     sum += digit;
+// }
+// console.log(sum);
+
+//3.Create a for loop that prints only the numbers between 1 and 100 that are divisible by both 3 and 5, but not by 7.
+for(let i=1;i<=100;i++){
+    if(i%3==0&&i%5==0||i%7!==0){
+        console.log(i)
+    }
+}
+
+//4.Given the string "JavaScript", use a for loop to create a new string that contains only the consonants (remove vowels).
+let str = "JavaScript";
+let result = "";
+for (let i = 0; i < str.length; i++) {
+    if (
+        str[i] !== "a" &&
+        str[i] !== "e" &&
+        str[i] !== "i" &&
+        str[i] !== "o" &&
+        str[i] !== "u"
+    ) {
+        result += str[i];
+    }
+}
+console.log(result);
+
+//5.Write a for loop that finds the largest number in an array of positive integers without using any sorting method.
+let arr = [12, 45, 23, 67, 34];
+let largest = arr[0];
+for (let i = 1; i < arr.length; i++) {
+    if (arr[i] > largest) {
+        largest = arr[i];
+    }
+}
+console.log(largest);
+
+//6.Use a for loop to check whether a given number is a perfect number (a number equal to the sum of its proper divisors). Example: 28.
+let num = 28;
+let sum = 0;
+for (let i = 1; i < num; i++) {
+    if (num % i === 0) {
+        sum += i;
+    }
+}
+if (sum === num) {
+    console.log("Perfect number");
+} else {
+    console.log("Not a perfect number");
+}
+
+//7.Print the following series using a single for loop:
+//1 2 4 8 16 32 64 128 
+let bag="";
+for (let i = 1; i <= 128; i *= 2) {
+    bag+= i +" ";
+}
+console.log(bag)
+
+//9.Given an array of student scores [45, 78, 90, 32, 56, 88], use a for loop to calculate the average and also count how many students scored above the average.
+let scores = [45, 78, 90, 32, 56, 88];
+let sum = 0;
+for (let i = 0; i < scores.length; i++) {
+    sum += scores[i];
+}
+let average = sum / scores.length;
+let count = 0;
+
+for (let i = 0; i < scores.length; i++) {
+    if (scores[i] > average) {
+        count++;
+    }
+}
+console.log("Average:", average);
+console.log("Students above average:", count);
+
+
+
+
+
+
+
+
+
+
+
+
+
