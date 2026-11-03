@@ -1,0 +1,182 @@
+//Section 2: Function Declaration
+//==============================================================
+//1.Create a function declaration named displayCourse that returns "JavaScript Fundamentals". Call it and print the result.
+function displayCourse(){
+    return "JavaScript Fundamentals"
+}
+console.log(displayCourse())
+
+//2.Write a function declaration getStudentStatus that returns the string "Active Learner". Store the returned value in a variable and print it.
+function getStudentsStatus(){
+    return "Active Learner"
+}
+let result=getStudentsStatus()
+console.log(result)
+
+//3.Write a function declaration and call it before its definition. What happens and why? Explain briefly.
+greet();  // Calling before definition
+
+function greet() {
+    console.log("Hello World!");
+}
+// Explanation:
+// JavaScript hoists function declarations to the top of their scope during the compilation phase. Therefore, we can call a function before defining it without getting an error.
+//===========================================================================================================================================================================================
+//===========================================================================================================================================================================================
+//Section 3: Function Expression
+//==================================================
+//1.Create a function expression named showMotto that returns "Code. Learn. Grow.". Call it and print the output.
+const showMotto = function(){
+    return "Code. Learn. Grow."
+}
+console.log(showMotto())
+
+//2.Write a function expression getSemester that returns the number 3. Print the value returned by the function.
+const getSemester = function(){
+    return 3
+}
+console.log(getSemester())
+
+//3.Create a function expression and try to call it before writing the expression. What error do you get and why?
+// greet()
+
+// const greet = function(){
+//     return "Good Morning"
+// }
+// console.log(greet())
+//===========================================================================================================================================================================================
+//===========================================================================================================================================================================================
+//Section 4: Function Calling (Invocation)
+//====================================================
+//1.Write a function declaration greetStudent that returns "All the best for your coding journey!". Call this function four times.
+function greetStudent(){
+    return "All the best for your coding journey!"
+}
+console.log(greetStudent())
+console.log(greetStudent())
+console.log(greetStudent())
+console.log(greetStudent())
+
+//2.Create a function expression todayFocus that returns "Focus on functions today". Store the result in a variable and print that variable
+function todayFocus(){
+    return "Focus on functions today."
+}
+let res=todayFocus()
+console.log(res)
+
+//3.Write one function declaration and one function expression. Call each of them twice and print all four results.
+// Function Declaration
+function add(a, b) {
+    return a + b;
+}
+
+console.log(add(10, 20));
+console.log(add(5, 15));
+
+
+// Function Expression
+const multiply = function(a, b) {
+    return a * b;
+};
+
+console.log(multiply(4, 5));
+console.log(multiply(3, 6));
+//==========================================================
+//Section 5: Parameters vs Arguments
+//=============================================================
+//Practical Questions
+//1.Write a function declaration subtract(a, b) that returns the difference of two numbers. Call it with arguments 50 and 18 and print the result.
+function subtract(x,y){
+    return x-y
+}
+console.log(subtract(50,18))
+
+//2.Create a function expression greetUser(name) that returns "Welcome, " + name + "!". Call it with the argument "Aarav".
+function greetUser(name){
+    return "Welcome, " + name +"!"
+}
+console.log(greetUser("Shreya Pandey"))
+
+//3.Write a function calculateArea(length, breadth) that returns the area of a rectangle. Call it twice with different pairs of arguments: (12, 5) and (8, 9).
+function calculateArea(length,breadth){
+    return length*breadth
+}
+console.log(calculateArea(12,5))
+console.log(calculateArea(8,9))
+//====================================================
+//Section 6: Return Statement
+//=====================================================
+//Practical Questions
+//1.Write a function squareOfNumber(n) that returns the square of the given number. Call it with 9 and print the returned value.
+function squareOfNumber(n){
+    return n**2
+}
+console.log(squareOfNumber(15))
+
+//2.Create a function isAdult(age) that returns true if age is 18 or above, otherwise returns false. Test it with 17 and 20.
+function isAdult(age){
+    if (age>=18){
+        return true
+    }else{
+        return false
+    }
+}
+console.log(isAdult(19))
+
+//3.Write a function getFullName(firstName, lastName) that returns the full name. Call it with "Rohit" and "Sharma" and print the result.
+function getFullName(firstName,lastName){
+    return firstName + " " + lastName
+}
+console.log(getFullName("Shreya", "Pandey"))
+//===========================================================
+//Section 7: Why Use Functions? (Real-world Example)
+//============================================================
+//Practical Questions
+//1.You need to calculate the total marks of three subjects for 4 different students. Write a function getTotal(m1, m2, m3) and call it four times with different marks instead of repeating the addition code.
+function getTotal(m1, m2, m3) {
+    return (m1 + m2 + m3);
+}
+
+console.log(getTotal(85, 92, 78)); // For a
+console.log(getTotal(70, 60, 80)); // For b
+console.log(getTotal(83, 56, 69)); // For x
+console.log(getTotal(99, 80, 50)); // For y
+
+//2.Create a function calculateSimpleInterest(principal, rate, time) that returns the simple interest. Use the function to find interest for two different sets of values.
+function calculateSimpleIntrest(principal, rate ,time){
+    return (principal*rate*time)/100
+}
+console.log(calculateSimpleIntrest(5000,10,2))
+console.log(calculateSimpleIntrest(53000,20,3))
+
+//3.Without using a function, write code to find the average of three numbers twice (for two students). Then rewrite the same logic using a single function findAverage(a, b, c) and call it twice.
+let average1=(74+45+89)/3;
+let average2=(46+78+98)/3;
+console.log(average1);
+console.log(average2)
+
+function findAverage(x,y,z){
+    return x+y+z
+}
+console.log(findAverage(78,69,80))
+console.log(findAverage(77+97+86))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
